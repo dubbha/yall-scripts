@@ -11,10 +11,16 @@
     "yarn": ">= 1"
   },
   "scripts": {
-    "h": "node ./bin/yarn-all.js -h",
-    "v": "node ./bin/yarn-all.js -v",
-    "all": "node ./bin/yarn-all.js"
+    "lint:bin": "eslint ./bin",
+    "lint:lib": "eslint ./lib",
+    "lint": "node ./bin/yarn-all.js lint:lib lint:bin"
   },
   "author": "Alex Dubovyk",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^7.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }
