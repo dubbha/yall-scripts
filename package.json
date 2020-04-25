@@ -1,0 +1,20 @@
+{
+  "name": "yarn-all",
+  "version": "1.0.0",
+  "description": "Run several npm scripts in parallel or sequence forwarding the options in a yarn-friendly manner",
+  "bin": {
+    "yarn-all": "bin/yarn-all.js"
+  },
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 10",
+    "yarn": ">= 1"
+  },
+  "scripts": {
+    "h": "node ./bin/yarn-all.js -h",
+    "v": "node ./bin/yarn-all.js -v",
+    "all": "node ./bin/yarn-all.js"
+  },
+  "author": "Alex Dubovyk",
+  "license": "MIT"
+}
