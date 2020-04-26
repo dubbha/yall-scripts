@@ -31,14 +31,8 @@ Run several npm scripts in parallel or in sequence forwarding the options in a y
       $ yarn-all -p start:* --watch
       $ yarn-all --parallel lint:* --fix
 
-    Forward options only to some of the tasks (TBD):
-      $ yarn-all clean lint-- test-- build --silent
-      $ yarn-all -p lint:*-- test --fix
-      
+    Run the yarn-all based npm script forwarding the option in a yarn-friendly manner:
 
-    Run the yarn-all based npm script in a yarn-friendly manner, producing no warnings:
-
-      /* package.json */
       {
         "scripts": {
           "lint:js": "eslint ./src",

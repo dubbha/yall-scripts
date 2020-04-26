@@ -6,6 +6,10 @@
     "yarn-all": "bin/yarn-all.js"
   },
   "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
   "engines": {
     "node": ">= 10",
     "yarn": ">= 1"
@@ -13,15 +17,36 @@
   "scripts": {
     "lint:bin": "eslint ./bin",
     "lint:lib": "eslint ./lib",
-    "lint": "node ./bin/yarn-all.js lint:*"
+    "lint": "node ./bin/yarn-all.js --parallel lint:*"
   },
-  "author": "Oleksiy Dubovyk",
-  "license": "MIT",
   "dependencies": {
     "cross-spawn": "^7.0.2",
     "picomatch": "^2.2.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
-  }
+  },
+  "keywords": [
+    "yarn",
+    "all",
+    "run",
+    "npm",
+    "script",
+    "task",
+    "parallel",
+    "concurrently",
+    "serial",
+    "sequence",
+    "sequential",
+    "spawn",
+    "cli",
+    "tool"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dubbha/yarn-all.git"
+  },
+  "homepage": "https://github.com/dubbha/yarn-all",
+  "author": "Oleksiy Dubovyk",
+  "license": "MIT"
 }
