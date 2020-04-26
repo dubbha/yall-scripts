@@ -13,12 +13,13 @@
   "scripts": {
     "lint:bin": "eslint ./bin",
     "lint:lib": "eslint ./lib",
-    "lint": "node ./bin/yarn-all.js lint:lib lint:bin"
+    "lint": "node ./bin/yarn-all.js lint:*"
   },
-  "author": "Alex Dubovyk",
+  "author": "Oleksiy Dubovyk",
   "license": "MIT",
   "dependencies": {
-    "cross-spawn": "^7.0.2"
+    "cross-spawn": "^7.0.2",
+    "picomatch": "^2.2.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
