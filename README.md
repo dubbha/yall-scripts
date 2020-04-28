@@ -1,6 +1,6 @@
 # yall-scripts
 
-![npm (scoped)](https://img.shields.io/npm/v/yall-scripts.svg)
+[![npm](https://img.shields.io/npm/v/yall-scripts.svg)](https://npmjs.com/package/yall-scripts)
 
 Run several npm scripts in parallel or in sequence forwarding the options in a [yarn](https://yarnpkg.com/)-friendly manner, using the `yall` CLI tool:
 
