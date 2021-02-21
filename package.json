@@ -20,11 +20,11 @@
     "lint": "node ./bin/yall.js --parallel lint:*"
   },
   "dependencies": {
-    "cross-spawn": "^7.0.2",
+    "cross-spawn": "^7.0.3",
     "picomatch": "^2.2.2"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.20.0"
   },
   "keywords": [
     "yarn",
