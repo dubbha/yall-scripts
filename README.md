@@ -20,6 +20,8 @@ $ yall [options] [tasks] [forward-options]
 Options:
   -s, --serial, --sequential, --sequence  // run tasks in sequence
   -p, --parallel                          // run tasks in parallel
+  -w, --workspaces                        // run tasks in all child workspaces
+  -q, --quiet                             // don't print verbose workspace information
   -v, --version                           // print version
   -h, --help                              // print help
 ```
@@ -36,6 +38,18 @@ Run tasks in parallel:
 ```js
 $ yall -p clean lint test build
 $ yall --parallel clean lint test build
+```
+
+Run tasks in all child workspaces:
+```js
+$ yall -w clean lint test build
+$ yall --workspaces clean lint test build
+```
+
+Combine multiple options:
+```js
+$ yall -pwq clean lint test build
+$ yall --parallel --workspaces --quiet clean lint test build
 ```
 
 Run tasks using matching patterns:
